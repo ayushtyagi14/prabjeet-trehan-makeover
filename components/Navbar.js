@@ -72,7 +72,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.2 }}
-                        className="bg-[#ffded6] w-[90%] mx-5 md:mx-9 border-2 border-black fixed top-[138px] z-[999] py-4 text-center flex flex-col items-center gap-10"
+                        className="bg-[#d6ebff] w-[90%] mx-5 md:mx-9 border-2 border-[#2b4dac] fixed top-[138px] z-[999] py-4 text-center flex flex-col items-center gap-10"
                     >
                         <div className="flex flex-col items-center gap-2">
                             <Link href="/" className="hover:text-gray-300">

@@ -74,7 +74,7 @@ const Services = () => {
             className="max-w-screen-2xl mx-auto py-12 px-4"
             id="services"
         >
-            <h1 className={`${relieve.className} text-[90px] md:text-[140px] leading-[3rem] md:leading-[5rem] text-gray-800 mb-6 text-center`}>
+            <h1 className={`${relieve.className} text-[60px] md:text-[90px] font-thin uppercase text-gray-800 mb-6 text-center`}>
                 My Services
             </h1>
             {services.map((service, index) => (
@@ -91,7 +91,7 @@ const Services = () => {
                                 <img src={service.mainImage} alt={service.title} className="w-[400px] object-cover rounded-[24px]" />
                             </div>
                             <div className="px-6 flex flex-col md:items-start items-center text-center md:text-left gap-2">
-                                <h2 className={` ${relieve.className} text-[40px] md:text-[60px] text-gray-800 leading-[26px] text-center md:text-left`}>{service.title}</h2>
+                                <h2 className={` ${relieve.className} text-[32px] md:text-[40px] uppercase text-gray-800 text-center md:text-left`}>{service.title}</h2>
                                 <div className="md:hidden block">
                                     <img
                                         src={service.mainImage}

@@ -10,12 +10,12 @@ const Contact = () => {
             className="max-w-screen-2xl mx-auto py-12 px-4"
             id="contact"
         >
-            <h1 className={`${relieve.className} text-[90px] md:text-[140px] leading-[3rem] md:leading-[5rem] text-gray-800 mb-6 text-center`}>
+            <h1 className={`${relieve.className} text-[60px] md:text-[90px] font-thin uppercase text-gray-800 mb-6 text-center`}>
                 Contact Me
             </h1>
             <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-lg mx-auto mt-6">
                 <div className="w-full md:w-1/2 md:pr-8 mb-8 flex flex-col items-center md:items-start">
-                    <p className={`${relieve.className} mb-4 text-[44px] md:text-[60px] leading-[45px] text-center md:text-left`}>
+                    <p className={`${relieve.className} mb-4 text-[28px] md:text-[40px] leading-none text-center md:text-left`}>
                         Get in touch with me for inquiries or bookings:
                     </p>
                     <div className="flex flex-col justify-between">

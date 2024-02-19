@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: #fbe5df;
-} */
-
 body {
-  background-color: #eaf5ff;
+  background-color: #fff7f7;
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +31,7 @@ body::-webkit-scrollbar {
   height: var(--height-bar);
   width: 100%;
   border-radius: 0.5rem;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .bar--1 {

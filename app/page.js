@@ -17,7 +17,7 @@ export default function Home() {
       <AboutMe />
       <Services />
       <Review />
-      <Gallery />
+      {/* <Gallery /> */}
       <Contact />
       <Footer />
     </div>

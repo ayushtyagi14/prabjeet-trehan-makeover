@@ -4,7 +4,7 @@ import './globals.css'
 
 import localFont from 'next/font/local'
 
-// export const relieve = localFont({ src: '../public/Relieve.ttf' })
+export const amsterdam = localFont({ src: '../public/amsterdamFour.ttf' })
 
 const dmSans = DM_Sans({ subsets: ['latin'] })
 export const relieve = Josefin_Sans({ subsets: ['latin'] })

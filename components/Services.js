@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { relieve } from "@/app/layout";
 
 const Services = () => {
@@ -36,7 +37,6 @@ const Services = () => {
             mainImage: "/fantasy-makeup.jpg",
             galleryImages: ["/fantasy1.jpg", "/fantasy2.jpg", "/fantasy3.jpg", "/fantasy4.jpg"]
         },
-        // Add more services as needed
     ];
 
     const [width, setWidth] = useState(null);
@@ -56,14 +56,21 @@ const Services = () => {
         mobile = false;
     }
 
-    const autoplayDelay = 3000;
-    const videoDelay = 1500;
+    const autoplayDelay = 800;
+    const videoDelay = 1000;
 
     const swiperRef = useRef(null);
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+    const [showModal, setShowModal] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const handleSlideChange = (swiper) => {
         setCurrentSlideIndex(swiper.realIndex);
+    };
+
+    const handleImageClick = (image) => {
+        setSelectedImage(image);
+        setShowModal(true);
     };
 
     return (
@@ -74,7 +81,7 @@ const Services = () => {
             className="max-w-screen-2xl mx-auto py-12 px-4"
             id="services"
         >
-            <h1 className={`${relieve.className} text-[60px] md:text-[90px] font-thin uppercase text-gray-800 mb-6 text-center`}>
+            <h1 className={`${relieve.className} text-[60px] md:text-[90px] uppercase text-gray-800 mb-6 text-center`}>
                 My Services
             </h1>
             {services.map((service, index) => (
@@ -124,7 +131,12 @@ const Services = () => {
                             >
                                 {service.galleryImages.map((image, index) => (
                                     <SwiperSlide key={index}>
-                                        <img src={image} alt={`${service.title} Gallery ${index + 1}`} className="md:w-[180px] object-cover rounded-lg" />
+                                        <img
+                                            src={image}
+                                            alt={`${service.title} Gallery ${index + 1}`}
+                                            className="md:w-[180px] object-cover rounded-lg hover:cursor-pointer"
+                                            onClick={() => handleImageClick(image)}
+                                        />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
@@ -132,6 +144,33 @@ const Services = () => {
                     </div>
                 </motion.div>
             ))}
+            {showModal && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center z-[999]"
+                >
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        exit={{ scale: 0 }}
+                        className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center z-[99]"
+                    >
+                        <img
+                            src={selectedImage}
+                            alt="Selected Image"
+                            className="max-w-full max-h-full"
+                        />
+                        <button
+                            className="absolute top-4 right-4 text-white text-[28px] focus:outline-none"
+                            onClick={() => setShowModal(false)}
+                        >
+                            X
+                        </button>
+                    </motion.div>
+                </motion.div>
+            )}
         </motion.section>
     );
 };

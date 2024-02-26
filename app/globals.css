@@ -66,3 +66,9 @@ body::-webkit-scrollbar {
   --rotate-bar-one: 45deg;
   --rotate-bar-three: -45deg;
 }
+
+.navbar-background {
+  background-image: url("../public/navbar-img.jpg");
+  background-size: cover;
+  background-position: center;
+}

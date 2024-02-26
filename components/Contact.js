@@ -10,7 +10,7 @@ const Contact = () => {
             className="max-w-screen-2xl mx-auto py-12 px-4"
             id="contact"
         >
-            <h1 className={`${relieve.className} text-[60px] md:text-[90px] font-thin uppercase text-gray-800 mb-6 text-center`}>
+            <h1 className={`${relieve.className} text-[60px] md:text-[90px] uppercase text-gray-800 mb-6 text-center`}>
                 Contact Me
             </h1>
             <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-lg mx-auto mt-6">

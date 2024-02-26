@@ -55,7 +55,7 @@ const Review = () => {
             className="max-w-screen-2xl mx-auto py-12 px-4"
             id="reviews"
         >
-            <h1 className={`${relieve.className} text-[60px] md:text-[90px] font-thin uppercase text-gray-800 mb-6 text-center`}>
+            <h1 className={`${relieve.className} text-[60px] md:text-[90px] uppercase text-gray-800 mb-6 text-center`}>
                 Client Reviews
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto mt-4">

@@ -10,7 +10,7 @@ const AboutMe = () => {
                     initial={{ opacity: 0, y: -200 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="flex flex-col lg:flex-row gap-10 items-center justify-between lg:px-20 p-4 lg:py-0 lg:h-[280px] w-full rounded-[32px] border-2 border-[#2b4dac] bg-[#FDD121] shadow-md"
+                    className="flex flex-col lg:flex-row gap-10 items-center justify-between lg:px-20 p-4 lg:py-0 lg:h-[280px] w-full rounded-[32px] bg-[#FDD121] shadow-md"
                 >
                     <div className="lg:w-[70%]">
                         <h2 className={`${relieve.className} text-3xl md:text-[40px] uppercase mb-4`}>About Me</h2>
@@ -35,7 +35,7 @@ const AboutMe = () => {
                         initial={{ opacity: 0, x: -300 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
-                        className="flex flex-col items-center rounded-[32px] border-2 border-[#2b4dac] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
+                        className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
                     >
                         <img
                             src="/makeup1.jpg"
@@ -57,7 +57,7 @@ const AboutMe = () => {
                             src="/intro.png"
                             alt="About Me"
                             width={300}
-                            className="rounded-lg shadow-2xl mb-4 border-2 border-[#2b4dac]"
+                            className="rounded-lg shadow-2xl mb-4"
                         />
                     </div>
 
@@ -66,7 +66,7 @@ const AboutMe = () => {
                         initial={{ opacity: 0, x: 300 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
-                        className="flex flex-col items-center rounded-[32px] border-2 border-[#2b4dac] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
+                        className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
                     >
                         <img
                             src="/bridal2.jpg"

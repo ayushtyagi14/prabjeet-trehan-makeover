@@ -4,8 +4,11 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
-import { relieve } from "@/app/layout";
+import { relieve, stone } from "@/app/layout";
 
 const Services = () => {
     const services = [
@@ -50,22 +53,28 @@ const Services = () => {
         };
     }, []);
 
-    if (width < 1000) {
+    if (width < 800) {
         mobile = true;
     } else {
         mobile = false;
     }
 
-    const autoplayDelay = 800;
-    const videoDelay = 1000;
-
-    const swiperRef = useRef(null);
-    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const handleSlideChange = (swiper) => {
-        setCurrentSlideIndex(swiper.realIndex);
+    const slidesToShow = mobile ? 2.9 : 4;
+
+    const settings = {
+        infinite: true,
+        speed: 2000,
+        slidesToShow: slidesToShow,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        pauseOnHover: true,
+        prevArrow: false,
+        nextArrow: false,
     };
 
     const handleImageClick = (image) => {
@@ -81,7 +90,7 @@ const Services = () => {
             className="max-w-screen-2xl mx-auto py-12 px-4"
             id="services"
         >
-            <h1 className={`${relieve.className} text-[60px] md:text-[90px] uppercase text-gray-800 mb-6 text-center`}>
+            <h1 className={`${stone.className} text-[60px] md:text-[90px] text-gray-800 mb-6 text-center`}>
                 My Services
             </h1>
             {services.map((service, index) => (
@@ -90,10 +99,10 @@ const Services = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
-                    className="bg-[#d6ebff] border-[1.6px] border-[#2b4dac] shadow-lg rounded-[32px] overflow-hidden mb-8 max-w-screen-lg mx-auto p-5"
+                    className="overflow-hidden mb-8"
                 >
                     <div className="flex flex-col">
-                        <div className="flex flex-row items-center">
+                        <div className="flex flex-row items-center max-w-screen-lg mx-auto bg-[#d6ebff] border-[1.21px] rounded-[32px] border-[#2b4dac] shadow-lg mb-8 p-5">
                             <div className="md:block hidden">
                                 <img src={service.mainImage} alt={service.title} className="w-[400px] object-cover rounded-[24px]" />
                             </div>
@@ -113,33 +122,19 @@ const Services = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="md:w-[60%] w-[90%] mx-auto mt-8">
-                            <Swiper
-                                ref={swiperRef}
-                                modules={[Autoplay]}
-                                spaceBetween={6}
-                                slidesPerView={mobile ? 2.2 : 3.5}
-                                autoplay={{
-                                    delay: autoplayDelay,
-                                    disableOnInteraction: false,
-                                }}
-                                speed={videoDelay}
-                                loop={true}
-                                centeredSlides={false}
-                                className="mySwipe"
-                                onSlideChange={handleSlideChange}
-                            >
+                        <div className="w-[90%] 2xl:w-full mx-auto mt-8">
+                            <Slider {...settings}>
                                 {service.galleryImages.map((image, index) => (
-                                    <SwiperSlide key={index}>
+                                    <div key={index}>
                                         <img
                                             src={image}
                                             alt={`${service.title} Gallery ${index + 1}`}
-                                            className="md:w-[180px] object-cover rounded-lg hover:cursor-pointer"
+                                            className="2xl:w-[350px] lg:w-[250px] object-cover rounded-lg hover:cursor-pointer"
                                             onClick={() => handleImageClick(image)}
                                         />
-                                    </SwiperSlide>
+                                    </div>
                                 ))}
-                            </Swiper>
+                            </Slider>
                         </div>
                     </div>
                 </motion.div>

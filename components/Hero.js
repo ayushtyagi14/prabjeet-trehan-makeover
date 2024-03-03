@@ -9,10 +9,10 @@ const Hero = () => {
             <div className="absolute top-0 left-0 right-0 z-10 opacity-[85%]">
                 <Navbar />
             </div>
-            <div className="lg:h-[75vh] md:h-[75vh] h-[55vh] bg-[#0a0d08] rounded-b-[5%]">
+            <div className="lg:h-[78vh] md:h-[75vh] h-[45vh] bg-[#0a0d08] rounded-b-[5%]">
                 <Image
-                    src="/hero-img.jpg"
-                    className="brightness-[70%] object-contain"
+                    src="/hero-img.png"
+                    className="brightness-[70%] object-cover"
                     fill
                 />
             </div>

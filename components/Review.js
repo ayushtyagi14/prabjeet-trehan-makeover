@@ -4,45 +4,45 @@ import { motion } from "framer-motion";
 const Review = () => {
     const reviews = [
         {
-            name: "Emily",
+            name: "Manpreet",
             review: "Absolutely loved the makeup! Prabjeet is incredibly talented and made me feel so beautiful. Highly recommend!",
             stars: 5,
-            initial: "EJ",
-            service: "Bridal Makeup"
+            initial: "MA",
+            service: "Wedding Celebration Makeup"
         },
         {
-            name: "Jessica",
+            name: "Jenny",
             review: "Had such a wonderful experience with Prabjeet. She really listened to what I wanted and the result was stunning. Will definitely be coming back!",
             stars: 4,
-            initial: "JW",
+            initial: "JE",
             service: "Natural Beauty"
         },
         {
-            name: "Sophie",
+            name: "Roza",
             review: "Prabjeet is amazing! Her attention to detail is impeccable and she has such a friendly demeanor. Couldn't be happier with my makeup!",
             stars: 5,
-            initial: "SL",
+            initial: "RO",
             service: "Evening Glam"
         },
         {
-            name: "Anna",
+            name: "Ridhi",
             review: "Highly professional and talented makeup artist. Prabjeet made me feel comfortable and beautiful. Will be recommending her to all my friends!",
             stars: 5,
-            initial: "AT",
-            service: "Fantasy Makeup"
+            initial: "RI",
+            service: "Self Makeup Class"
         },
         {
-            name: "Michael",
+            name: "Jyoti",
             review: "Prabjeet is an exceptional makeup artist! She made me look great for my photoshoot. I couldn't have asked for better results.",
             stars: 4,
-            initial: "MB",
+            initial: "JY",
             service: "Bridal Makeup"
         },
         {
-            name: "Sarah",
+            name: "Shallu",
             review: "I had a fantastic experience with Prabjeet. She understood exactly what I wanted and executed it perfectly. Highly recommend her services!",
             stars: 5,
-            initial: "SP",
+            initial: "SH",
             service: "Evening Glam"
         }
     ];
@@ -65,7 +65,7 @@ const Review = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        className="bg-[#d6ebff] border-[1.6px] border-[#2b4dac] shadow-lg rounded-lg overflow-hidden p-6"
+                        className="bg-[#FDD121] shadow-lg rounded-lg overflow-hidden p-6"
                     >
                         <div className="flex items-center mb-4">
                             <div className="mr-4 bg-[#2b4dac] rounded-full w-12 h-12 flex items-center justify-center">

@@ -20,7 +20,7 @@ const AboutMe = () => {
                     </div>
                     <div className="mb-8 md:mb-0">
                         <img
-                            src="/prabjeet.jpg"
+                            src="/about-me-top.jpg"
                             alt="About Me"
                             width={230}
                             className="rounded-lg shadow-lg"
@@ -38,7 +38,7 @@ const AboutMe = () => {
                         className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
                     >
                         <img
-                            src="/makeup1.jpg"
+                            src="/about-me-left.jpg"
                             alt="About Me"
                             width={160}
                             className="rounded-lg shadow-lg mb-4 -mt-10"
@@ -54,7 +54,7 @@ const AboutMe = () => {
                             initial={{ scale: 0 }}
                             whileInView={{ scale: 1 }}
                             transition={{ duration: 1 }}
-                            src="/intro.png"
+                            src="/about-me-centre.png"
                             alt="About Me"
                             width={300}
                             className="rounded-lg shadow-2xl mb-4"
@@ -66,10 +66,10 @@ const AboutMe = () => {
                         initial={{ opacity: 0, x: 300 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
-                        className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
+                        className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2 mt-6 md:mt-0"
                     >
                         <img
-                            src="/bridal2.jpg"
+                            src="/about-me-right.jpg"
                             alt="About Me"
                             width={200}
                             className="rounded-lg shadow-lg mb-4 -mt-10"

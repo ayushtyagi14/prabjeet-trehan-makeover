@@ -50,37 +50,43 @@ const Navbar = () => {
                                 Contact
                             </Link>
                         </div>
-                        <div className="lg:hidden block">
-                            <input
-                                hidden
-                                className="check-icon"
-                                id="check-icon"
-                                name="check-icon"
-                                type="checkbox"
-                                onClick={() => setMenuOpen(!menuOpen)}
-                            />
-                            <label className="icon-menu" htmlFor="check-icon">
-                                <div className="bar bar--1"></div>
-                                <div className="bar bar--2"></div>
-                                <div className="bar bar--3"></div>
-                            </label>
+                        <div className="lg:hidden flex flex-col items-end gap-2">
+                            <a href="tel:+15164125545" className="flex flex-row gap-3 items-center font-light text-[14px]">
+                                <img src="/call-white.png" alt="call" width={20} />
+                                +1 (516) 412-5545
+                            </a>
+                            <div>
+                                <input
+                                    hidden
+                                    className="check-icon"
+                                    id="check-icon"
+                                    name="check-icon"
+                                    type="checkbox"
+                                    onClick={() => setMenuOpen(!menuOpen)}
+                                />
+                                <label className="icon-menu" htmlFor="check-icon">
+                                    <div className="bar bar--1"></div>
+                                    <div className="bar bar--2"></div>
+                                    <div className="bar bar--3"></div>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
                     <div className="fixed hidden lg:flex top-2 right-3 flex-row gap-3">
-                        <a href="#">
+                        <a href="https://www.instagram.com/prabjeettrehanmakeover" target="_blank">
                             <img src="/instagram.png" alt="instagram" width={28} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UCD4_q_-k660JCT-31-GXlEQ" target="_blank">
                             <img src="/youtube.png" alt="youtube" width={28} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/Prabjeettrehanmakeover/" target="_blank">
                             <img src="/facebook.png" alt="facebook" width={28} />
                         </a>
                     </div>
 
                     <div className="fixed hidden lg:flex top-2 left-3">
-                        <a href="#" className="flex flex-row gap-3 items-center font-light">
+                        <a href="tel:+15164125545" className="flex flex-row gap-3 items-center font-light">
                             <img src="/call-white.png" alt="call" width={28} />
                             +1 (516) 412-5545
                         </a>
@@ -96,7 +102,7 @@ const Navbar = () => {
                     className={`fixed top-0 left-0 right-0 z-50 navbar-background ${scrolling ? 'bg-[#0a0d08]' : 'hidden'} text-white py-3`}
                 >
                     <div className="w-full flex lg:flex-col flex-row gap-2 justify-between items-center py-5 px-4 lg:py-0 lg:px-0">
-                        <h1 className={`${amsterdam.className} lg:text-[24px] text-[18px] font-light text-center tracking-[0.18rem]`}>
+                        <h1 className={`${amsterdam.className} lg:text-[24px] text-[18px] font-bold text-center tracking-[0.18rem]`}>
                             Prabjeet Trehan
                             <br />
                             Makeover
@@ -118,37 +124,43 @@ const Navbar = () => {
                                 Contact
                             </Link>
                         </div>
-                        <div className="lg:hidden block">
-                            <input
-                                hidden
-                                className="check-icon"
-                                id="check-icon"
-                                name="check-icon"
-                                type="checkbox"
-                                onClick={() => setMenuOpen(!menuOpen)}
-                            />
-                            <label className="icon-menu" htmlFor="check-icon">
-                                <div className="bar bar--1"></div>
-                                <div className="bar bar--2"></div>
-                                <div className="bar bar--3"></div>
-                            </label>
+                        <div className="lg:hidden flex flex-col items-end gap-2">
+                            <a href="tel:+15164125545" className="flex flex-row gap-3 items-center font-bold text-[14px]">
+                                <img src="/call-white.png" alt="call" width={20} />
+                                +1 (516) 412-5545
+                            </a>
+                            <div>
+                                <input
+                                    hidden
+                                    className="check-icon"
+                                    id="check-icon"
+                                    name="check-icon"
+                                    type="checkbox"
+                                    onClick={() => setMenuOpen(!menuOpen)}
+                                />
+                                <label className="icon-menu" htmlFor="check-icon">
+                                    <div className="bar bar--1"></div>
+                                    <div className="bar bar--2"></div>
+                                    <div className="bar bar--3"></div>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
                     <div className="fixed hidden lg:flex top-2 right-3 flex-row gap-3">
-                        <a href="#">
+                        <a href="https://www.instagram.com/prabjeettrehanmakeover" target="_blank">
                             <img src="/instagram.png" alt="instagram" width={28} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UCD4_q_-k660JCT-31-GXlEQ" target="_blank">
                             <img src="/youtube.png" alt="youtube" width={28} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/Prabjeettrehanmakeover/" target="_blank">
                             <img src="/facebook.png" alt="facebook" width={28} />
                         </a>
                     </div>
 
                     <div className="fixed hidden lg:flex top-2 left-3">
-                        <a href="#" className="flex flex-row gap-3 items-center font-light">
+                        <a href="tel:+15164125545" className="flex flex-row gap-3 items-center font-light">
                             <img src="/call-white.png" alt="call" width={28} />
                             +1 (516) 412-5545
                         </a>
@@ -162,7 +174,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.2 }}
-                        className="bg-[#d6ebff] w-full border-2 border-[#2b4dac] fixed top-[118px] z-[999] py-4 text-center flex flex-col items-center gap-10"
+                        className="bg-[#FDD121] w-full border-2 border-[#2b4dac] fixed top-[118px] z-[999] py-4 text-center flex flex-col items-center gap-10"
                     >
                         <div className="flex flex-col items-center gap-2">
                             <Link href="/" className="hover:text-gray-300">
@@ -185,13 +197,13 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className="flex items-center gap-3">
-                            <a href="#" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
+                            <a href="https://www.instagram.com/prabjeettrehanmakeover" target="_blank" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
                                 <img src="/instagram.png" alt="instagram" width={28} />
                             </a>
-                            <a href="#" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
+                            <a href="https://www.youtube.com/channel/UCD4_q_-k660JCT-31-GXlEQ" target="_blank" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
                                 <img src="/youtube.png" alt="youtube" width={28} />
                             </a>
-                            <a href="#" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
+                            <a href="https://www.facebook.com/Prabjeettrehanmakeover/" target="_blank" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
                                 <img src="/facebook.png" alt="facebook" width={28} />
                             </a>
                         </div>

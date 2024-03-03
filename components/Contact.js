@@ -1,7 +1,10 @@
 import { relieve, stone } from "@/app/layout";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Contact = () => {
+    const [showModal2, setShowModal2] = useState(false);
+
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -19,16 +22,19 @@ const Contact = () => {
                         Get in touch with me for inquiries or bookings:
                     </p>
                     <div className="flex flex-col justify-between">
-                        <p className="text-gray-800 mb-2 flex flex-row items-center gap-4">
+                        <a
+                            href="mailto:prabjeettrehanmakeover@gmail.com"
+                            className="text-gray-800 mb-2 flex flex-row items-center gap-4"
+                        >
                             <img src="/email.png" alt="email" width={24} />
-                            example@example.com
-                        </p>
-                        <p className="text-gray-800 mb-2 flex flex-row items-center gap-4">
+                            prabjeettrehanmakeover@gmail.com
+                        </a>
+                        <a href="tel:+15164125545" className="text-gray-800 mb-2 flex flex-row items-center gap-4">
                             <img src="/call.png" alt="call" width={24} />
-                            +1 123 456 7890
-                        </p>
+                            +1 (516) 412-5545
+                        </a>
                     </div>
-                    <button className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] mt-4">
+                    <button className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] mt-4" onClick={() => setShowModal2(true)}>
                         Book Consultation Now
                     </button>
                 </div>
@@ -38,19 +44,19 @@ const Contact = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <form className="bg-[#d6ebff] border-[1.6px] border-[#2b4dac] shadow-lg rounded-[32px] px-6 py-8">
+                    <form className="bg-[#FDD121] shadow-lg rounded-[32px] px-6 py-8">
                         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Send Message</h2>
                         <div className="mb-4">
-                            <input type="text" placeholder="What's Your Name?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#eaf5ff]" />
+                            <input type="text" placeholder="What's Your Name?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <input type="email" placeholder="What's Your Email?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#eaf5ff]" />
+                            <input type="email" placeholder="What's Your Email?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <input type="tel" placeholder="What's Your Phone Number?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#eaf5ff]" />
+                            <input type="tel" placeholder="What's Your Phone Number?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <textarea placeholder="Type Your Message..." rows="4" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#eaf5ff]"></textarea>
+                            <textarea placeholder="Type Your Message..." rows="4" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]"></textarea>
                         </div>
                         <button type="submit" className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] w-full">
                             Submit
@@ -58,6 +64,33 @@ const Contact = () => {
                     </form>
                 </motion.div>
             </div>
+            {showModal2 && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center z-[999]"
+                >
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        exit={{ scale: 0 }}
+                        className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center z-[99]"
+                    >
+                        <iframe
+                            src="https://calendly.com/prabjeettrehanmakeover/consult-with-prabjeet"
+                            width="80%"
+                            height="80%"
+                        />
+                        <button
+                            className="absolute top-4 right-4 text-white text-[28px] focus:outline-none"
+                            onClick={() => setShowModal2(false)}
+                        >
+                            X
+                        </button>
+                    </motion.div>
+                </motion.div>
+            )}
         </motion.section>
     );
 };

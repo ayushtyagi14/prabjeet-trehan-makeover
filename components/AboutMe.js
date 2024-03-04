@@ -20,7 +20,7 @@ const AboutMe = () => {
                     </div>
                     <div className="mb-8 md:mb-0">
                         <img
-                            src="/about-me-top.jpg"
+                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588349/public/about-me-top_kvqxtl.jpg"
                             alt="About Me"
                             width={230}
                             className="rounded-lg shadow-lg"
@@ -38,7 +38,7 @@ const AboutMe = () => {
                         className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
                     >
                         <img
-                            src="/about-me-left.jpg"
+                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588344/public/about-me-left_qopp7q.jpg"
                             alt="About Me"
                             width={160}
                             className="rounded-lg shadow-lg mb-4 -mt-10"
@@ -54,7 +54,7 @@ const AboutMe = () => {
                             initial={{ scale: 0 }}
                             whileInView={{ scale: 1 }}
                             transition={{ duration: 1 }}
-                            src="/about-me-centre.png"
+                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588354/public/about-me-centre_oa2wzp.png"
                             alt="About Me"
                             width={300}
                             className="rounded-lg shadow-2xl mb-4"
@@ -69,7 +69,7 @@ const AboutMe = () => {
                         className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2 mt-6 md:mt-0"
                     >
                         <img
-                            src="/about-me-right.jpg"
+                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588346/public/about-me-right_pf1swk.jpg"
                             alt="About Me"
                             width={200}
                             className="rounded-lg shadow-lg mb-4 -mt-10"

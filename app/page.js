@@ -3,7 +3,6 @@
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Review from "@/components/Review";
@@ -17,7 +16,6 @@ export default function Home() {
       <AboutMe />
       <Services />
       <Review />
-      {/* <Gallery /> */}
       <Contact />
       <Footer />
     </div>

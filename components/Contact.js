@@ -44,19 +44,22 @@ const Contact = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <form className="bg-[#FDD121] shadow-lg rounded-[32px] px-6 py-8">
+                    <form
+                        className="bg-[#FDD121] shadow-lg rounded-[32px] px-6 py-8"
+                        action="https://formsubmit.co/prabjeettrehanmakeover@gmail.com" method="POST"
+                    >
                         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Send Message</h2>
                         <div className="mb-4">
-                            <input type="text" placeholder="What's Your Name?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
+                            <input type="text" name="name" placeholder="What's Your Name?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <input type="email" placeholder="What's Your Email?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
+                            <input type="email" name="email" placeholder="What's Your Email?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <input type="tel" placeholder="What's Your Phone Number?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
+                            <input type="tel" name="Phone Number" placeholder="What's Your Phone Number?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <textarea placeholder="Type Your Message..." rows="4" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]"></textarea>
+                            <textarea placeholder="Type Your Message..." name="Message" rows="4" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]"></textarea>
                         </div>
                         <button type="submit" className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] w-full">
                             Submit
@@ -79,11 +82,11 @@ const Contact = () => {
                     >
                         <iframe
                             src="https://calendly.com/prabjeettrehanmakeover/consult-with-prabjeet"
-                            width="80%"
-                            height="80%"
+                            width="90%"
+                            height="90%"
                         />
                         <button
-                            className="absolute top-4 right-4 text-white text-[28px] focus:outline-none"
+                            className="absolute top-0 lg:top-4 right-4 text-white text-[28px] focus:outline-none"
                             onClick={() => setShowModal2(false)}
                         >
                             X

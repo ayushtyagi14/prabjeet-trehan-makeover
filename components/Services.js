@@ -16,54 +16,54 @@ const Services = () => {
             title: "Bride's Wedding Celebration Looks",
             description: "Transform into the stunning bride of your dreams with our personalized bridal makeup service.",
             // consultationFee: "$100",
-            mainImage: "/bridal5.jpg",
+            mainImage: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588360/public/bridal5_yscbvf.jpg",
             galleryImages: [
-                { type: "image", url: "/bridal1.jpg" },
-                { type: "image", url: "/bridal2.png" },
-                { type: "video", url: "/bridal3.mp4" },
-                { type: "image", url: "/bridal4.jpg" },
-                { type: "image", url: "/bridal5.jpg" },
-                { type: "image", url: "/bridal6.jpg" },
-                { type: "video", url: "/bridal7.mp4" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588352/public/bridal1_cq28ze.jpg" },
+                { type: "video", url: "https://res.cloudinary.com/df2jdmyci/video/upload/v1709588415/public/bridal3_dhefyv.mp4" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588381/public/bridal2_f3erwi.png" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588368/public/bridal4_lrspcw.jpg" },
+                { type: "video", url: "https://res.cloudinary.com/df2jdmyci/video/upload/v1709588404/public/bridal7_cg0ujx.mp4" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588360/public/bridal5_yscbvf.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588367/public/bridal6_deeuoe.jpg" },
             ]
         },
         {
             title: "Evening Glam",
             description: "Get ready to dazzle with our evening glam makeup service, perfect for special occasions and events.",
             consultationFee: "$100",
-            mainImage: "/evening1.jpg",
+            mainImage: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588373/public/evening1_jlwfwt.jpg",
             galleryImages: [
-                { type: "image", url: "/evening1.jpg" },
-                { type: "image", url: "/evening2.jpg" },
-                { type: "image", url: "/evening3.jpg" },
-                { type: "image", url: "/evening4.jpg" },
-                { type: "image", url: "/evening5.jpg" },
-                { type: "image", url: "/evening6.jpg" },
-                { type: "image", url: "/evening7.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588373/public/evening1_jlwfwt.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588378/public/evening2_c5kqu2.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588384/public/evening3_jrdmqi.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588388/public/evening4_byuukl.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588393/public/evening5_ceppge.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588390/public/evening6_dv6rhp.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588392/public/evening7_xny9ua.jpg" },
             ]
         },
         {
             title: "Natural Beauty",
             description: "Enhance your natural beauty with our subtle yet elegant makeup application for a fresh look.",
             consultationFee: "$100",
-            mainImage: "/natural2.jpg",
+            mainImage: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588405/public/natural2_qwfenv.jpg",
             galleryImages: [
-                { type: "image", url: "/natural1.jpg" },
-                { type: "image", url: "/natural2.jpg" },
-                { type: "image", url: "/natural3.jpg" },
-                { type: "image", url: "/natural4.jpg" },
-                { type: "image", url: "/natural5.jpg" },
-                { type: "image", url: "/natural6.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588404/public/natural1_yorjqj.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588405/public/natural2_qwfenv.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588406/public/natural3_gqwbqf.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588417/public/natural4_agvh67.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588407/public/natural5_qhm62w.jpg" },
+                { type: "image", url: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588416/public/natural6_puertb.jpg" },
             ]
         },
         {
             title: "Self Makeup Grooming Class",
             description: "Elevate your skills with personalized techniques for confident, flawless makeup.",
             consultationFee: "$150 - 6 hrs one day class",
-            mainImage: "/classes-banner.png",
+            mainImage: "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588357/public/classes-banner_svfobp.png",
             galleryImages: [
-                { type: "video", url: "/class1.mp4" },
-                { type: "video", url: "/class2.mp4" },
+                { type: "video", url: "https://res.cloudinary.com/df2jdmyci/video/upload/v1709588522/public/class1_dqcmly.mp4" },
+                { type: "video", url: "https://res.cloudinary.com/df2jdmyci/video/upload/v1709588455/public/class2_f6jtu3.mp4" },
             ]
         },
     ];
@@ -89,7 +89,7 @@ const Services = () => {
     const [showModal2, setShowModal2] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const slidesToShow = mobile ? 2.9 : 4;
+    const slidesToShow = mobile ? 2.4 : 4;
 
     const settings = {
         infinite: true,
@@ -142,7 +142,7 @@ const Services = () => {
                                     `}
                                 />
                             </div>
-                            <div className="px-6 flex flex-col md:items-start items-center text-center md:text-left gap-2">
+                            <div className="px-5 flex flex-col md:items-start items-center text-center md:text-left gap-2">
                                 <h2 className={` ${relieve.className} text-[32px] leading-tight t uppercase text-gray-800 text-center md:text-left`}>{service.title}</h2>
                                 <div className="md:hidden block">
                                     <img
@@ -172,7 +172,7 @@ const Services = () => {
                             <div className="w-[90%] 2xl:w-full mx-auto mt-8">
                                 <Slider {...settings}>
                                     {service.galleryImages.map((media, index) => (
-                                        <div key={index}>
+                                        <div key={index} className="px-1 lg:px-0">
                                             {media.type === "image" ? (
                                                 <img
                                                     src={media.url}
@@ -277,11 +277,11 @@ const Services = () => {
                     >
                         <iframe
                             src="https://calendly.com/prabjeettrehanmakeover/consult-with-prabjeet"
-                            width="80%"
-                            height="80%"
+                            width="90%"
+                            height="90%"
                         />
                         <button
-                            className="absolute top-4 right-4 text-white text-[28px] focus:outline-none"
+                            className="absolute top-0 lg:top-4 right-4 text-white text-[28px] focus:outline-none"
                             onClick={() => setShowModal2(false)}
                         >
                             X

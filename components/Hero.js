@@ -11,7 +11,7 @@ const Hero = () => {
             </div>
             <div className="lg:h-[78vh] md:h-[75vh] h-[45vh] bg-[#0a0d08] rounded-b-[5%]">
                 <Image
-                    src="/hero-img.png"
+                    src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588398/public/hero-img_haeym4.png"
                     className="brightness-[70%] object-cover"
                     fill
                 />

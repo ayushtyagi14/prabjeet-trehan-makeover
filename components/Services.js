@@ -189,6 +189,7 @@ const Services = () => {
                                                     autoPlay
                                                     loop
                                                     muted
+                                                    playsInline
                                                 />
                                             )}
                                         </div>
@@ -216,6 +217,7 @@ const Services = () => {
                                                 autoPlay
                                                 loop
                                                 muted
+                                                playsInline
                                             />
                                         )}
                                     </div>

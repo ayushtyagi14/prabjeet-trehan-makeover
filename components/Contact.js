@@ -48,7 +48,7 @@ const Contact = () => {
                         className="bg-[#FDD121] shadow-lg rounded-[32px] px-6 py-8"
                         action="https://formsubmit.co/prabjeettrehanmakeover@gmail.com" method="POST"
                     >
-                        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Send Message</h2>
+                        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Reach me for Queries</h2>
                         <div className="mb-4">
                             <input type="text" name="name" placeholder="What's Your Name?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>

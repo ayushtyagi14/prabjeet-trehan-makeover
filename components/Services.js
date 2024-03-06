@@ -89,7 +89,7 @@ const Services = () => {
     const [showModal2, setShowModal2] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const slidesToShow = mobile ? 2.4 : 4;
+    const slidesToShow = mobile ? 2.4 : 4.4;
 
     const settings = {
         infinite: true,
@@ -177,14 +177,14 @@ const Services = () => {
                                                 <img
                                                     src={media.url}
                                                     alt={`${service.title} Gallery ${index + 1}`}
-                                                    className="2xl:w-[350px] lg:w-[250px] object-cover rounded-lg hover:cursor-pointer"
+                                                    className="2xl:w-[300px] lg:w-[250px] h-[350px] object-cover object-top rounded-lg hover:cursor-pointer"
                                                     onClick={() => handleMediaClick(media)}
                                                 />
                                             ) : (
                                                 <video
                                                     src={media.url}
                                                     alt={`${service.title} Video ${index + 1}`}
-                                                    className="2xl:w-[350px] lg:w-[250px] object-cover rounded-lg hover:cursor-pointer"
+                                                    className="2xl:w-[300px] lg:w-[250px] h-[350px] object-cover object-top rounded-lg hover:cursor-pointer"
                                                     onClick={() => handleMediaClick(media)}
                                                     autoPlay
                                                     loop

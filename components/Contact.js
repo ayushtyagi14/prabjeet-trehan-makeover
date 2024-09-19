@@ -33,6 +33,16 @@ const Contact = () => {
                             <img src="/call.png" alt="call" width={24} />
                             +1 (516) 412-5545
                         </a>
+                        <div className="text-gray-800 mb-2 flex flex-row items-center gap-4">
+                            <img src="/location.png" alt="call" width={24} />
+                            <a href="https://maps.app.goo.gl/quNKdQRd1YcYLzzp7">
+                                9 ELM St Hicksville NY 11801
+                            </a>
+                            |
+                            <a href="https://maps.app.goo.gl/1SEUXJGCnt5sbv7p8">
+                                10 Lydia ln Edison NJ 08817
+                            </a>
+                        </div>
                     </div>
                     <button className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] mt-4" onClick={() => setShowModal2(true)}>
                         Book Consultation Now

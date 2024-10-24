@@ -1,5 +1,6 @@
 import { relieve } from "@/app/layout";
 import { motion } from "framer-motion";
+import Image from "next/image"; // Importing Image from Next.js
 
 const AboutMe = () => {
     return (
@@ -19,10 +20,11 @@ const AboutMe = () => {
                         </p>
                     </div>
                     <div className="mb-8 md:mb-0">
-                        <img
-                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588349/public/about-me-top_kvqxtl.jpg"
+                        <Image
+                            src="/assets/about-me.jpg"
                             alt="About Me"
                             width={230}
+                            height={300} // Specify height for better performance
                             className="rounded-lg shadow-lg"
                         />
                     </div>
@@ -37,10 +39,11 @@ const AboutMe = () => {
                         transition={{ duration: 1 }}
                         className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2"
                     >
-                        <img
-                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588344/public/about-me-left_qopp7q.jpg"
-                            alt="About Me"
+                        <Image
+                            src="/assets/about-me-left.jpg"
+                            alt="Left About Me Image"
                             width={160}
+                            height={200} // Specify height for better performance
                             className="rounded-lg shadow-lg mb-4 -mt-10"
                         />
                         <p className="text-gray-700 text-center">
@@ -50,15 +53,19 @@ const AboutMe = () => {
 
                     {/* Center Column */}
                     <div className="flex flex-col items-center">
-                        <motion.img
+                        <motion.div
                             initial={{ scale: 0 }}
                             whileInView={{ scale: 1 }}
                             transition={{ duration: 1 }}
-                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588354/public/about-me-centre_oa2wzp.png"
-                            alt="About Me"
-                            width={300}
-                            className="rounded-lg shadow-2xl mb-4"
-                        />
+                        >
+                            <Image
+                                src="/assets/about-me-centre.jpg"
+                                alt="Center About Me Image"
+                                width={300}
+                                height={400} // Specify height for better performance
+                                className="rounded-lg shadow-2xl mb-4"
+                            />
+                        </motion.div>
                     </div>
 
                     {/* Right Column */}
@@ -68,14 +75,15 @@ const AboutMe = () => {
                         transition={{ duration: 1 }}
                         className="flex flex-col items-center rounded-[32px] bg-[#FDD121] shadow-md lg:w-[400px] lg:h-[420px] p-2 mt-6 md:mt-0"
                     >
-                        <img
-                            src="https://res.cloudinary.com/df2jdmyci/image/upload/v1709588346/public/about-me-right_pf1swk.jpg"
-                            alt="About Me"
+                        <Image
+                            src="/assets/about-me-right.jpg"
+                            alt="Right About Me Image"
                             width={200}
+                            height={250} // Specify height for better performance
                             className="rounded-lg shadow-lg mb-4 -mt-10"
                         />
                         <p className="text-gray-700 text-center">
-                            From subtle enhancements to bold statements, each application is infused with precision and passion. Together, let&apos;s unlock your inner allure and unleash a newfound sense of confidence that radiates from within.
+                            From subtle enhancements to bold statements, each application is infused with precision and passion. Together, let's unlock your inner allure and unleash a newfound sense of confidence that radiates from within.
                         </p>
                     </motion.div>
                 </div>

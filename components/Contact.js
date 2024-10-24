@@ -4,6 +4,17 @@ import { useState } from "react";
 
 const Contact = () => {
     const [showModal2, setShowModal2] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        // Implement form submission logic
+        // On success:
+        setLoading(false);
+        setSubmitted(true);
+    };
 
     return (
         <motion.section
@@ -22,10 +33,7 @@ const Contact = () => {
                         Get in touch with me for inquiries or bookings:
                     </p>
                     <div className="flex flex-col justify-between">
-                        <a
-                            href="mailto:prabjeettrehanmakeover@gmail.com"
-                            className="text-gray-800 mb-2 flex flex-row items-center gap-4"
-                        >
+                        <a href="mailto:prabjeettrehanmakeover@gmail.com" className="text-gray-800 mb-2 flex flex-row items-center gap-4">
                             <img src="/email.png" alt="email" width={24} />
                             prabjeettrehanmakeover@gmail.com
                         </a>
@@ -34,14 +42,10 @@ const Contact = () => {
                             +1 (516) 412-5545
                         </a>
                         <div className="text-gray-800 mb-2 flex flex-row items-center gap-4">
-                            <img src="/location.png" alt="call" width={24} />
-                            <a href="https://maps.app.goo.gl/quNKdQRd1YcYLzzp7">
-                                9 ELM St Hicksville NY 11801
-                            </a>
+                            <img src="/location.png" alt="location" width={24} />
+                            <a href="https://maps.app.goo.gl/quNKdQRd1YcYLzzp7">9 ELM St Hicksville NY 11801</a>
                             |
-                            <a href="https://maps.app.goo.gl/1SEUXJGCnt5sbv7p8">
-                                10 Lydia ln Edison NJ 08817
-                            </a>
+                            <a href="https://maps.app.goo.gl/1SEUXJGCnt5sbv7p8">10 Lydia ln Edison NJ 08817</a>
                         </div>
                     </div>
                     <button className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] mt-4" onClick={() => setShowModal2(true)}>
@@ -54,26 +58,24 @@ const Contact = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <form
-                        className="bg-[#FDD121] shadow-lg rounded-[32px] px-6 py-8"
-                        action="https://formsubmit.co/prabjeettrehanmakeover@gmail.com" method="POST"
-                    >
+                    <form className="bg-[#FDD121] shadow-lg rounded-[32px] px-6 py-8" onSubmit={handleSubmit}>
                         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Reach me for Queries</h2>
                         <div className="mb-4">
-                            <input type="text" name="name" placeholder="What's Your Name?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
+                            <input type="text" name="name" placeholder="What's Your Name?" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <input type="email" name="email" placeholder="What's Your Email?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
+                            <input type="email" name="email" placeholder="What's Your Email?" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <input type="tel" name="Phone Number" placeholder="What's Your Phone Number?" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
+                            <input type="tel" name="phone" placeholder="What's Your Phone Number?" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]" />
                         </div>
                         <div className="mb-4">
-                            <textarea placeholder="Type Your Message..." name="Message" rows="4" className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]"></textarea>
+                            <textarea placeholder="Type Your Message..." name="message" rows="4" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#2b4dac] bg-[#fff]"></textarea>
                         </div>
                         <button type="submit" className="bg-[#2b4dac] text-white font-bold py-2 px-8 rounded-[12px] w-full">
-                            Submit
+                            {loading ? 'Submitting...' : 'Submit'}
                         </button>
+                        {submitted && <p className="text-green-600 text-center mt-4">Your message has been sent!</p>}
                     </form>
                 </motion.div>
             </div>
@@ -94,10 +96,12 @@ const Contact = () => {
                             src="https://calendly.com/prabjeettrehanmakeover/consult-with-prabjeet"
                             width="90%"
                             height="90%"
+                            title="Booking Calendar"
                         />
                         <button
-                            className="absolute top-0 lg:top-4 right-4 text-white text-[28px] focus:outline-none"
+                            className="absolute top-2 right-2 text-white text-[28px] focus:outline-none"
                             onClick={() => setShowModal2(false)}
+                            aria-label="Close modal"
                         >
                             X
                         </button>

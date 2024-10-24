@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar-background {
-  background-image: url("https://res.cloudinary.com/df2jdmyci/image/upload/v1709589459/navbar-img_xi3cxa.png");
+  background-image: url("../public/assets/navbar-img.jpg");
   background-size: cover;
   background-position: center;
 }

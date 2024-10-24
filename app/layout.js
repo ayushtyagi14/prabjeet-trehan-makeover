@@ -28,13 +28,42 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <title>Prabjeet Trehan Makeover</title>
-        <meta name="description" content="Description" />
-        
+
+        <meta name="description" content="Discover transformative beauty with Prabjeet Trehan Makeover, your premier destination for professional makeup services. Specializing in natural makeup, stunning bridal hairstyles, and trending looks like smokey eyes and Hollywood waves, we cater to clients in Hicksville, Edison, and surrounding areas. Embrace your beauty with personalized artistry, where every brushstroke enhances your confidence and reveals your unique story." />
+
+        <meta name="keywords" content="hair style, natural makeup, smokey eye look, makeup artist near hicksville, makeup artist near edison, makeup artist near me, hollywood waves, bollywood waves hair style, waves pattern, beach wave, crimping hair style, low bun, bridal bun, bridal braid, messy braid, messy jhura, front hair style variations, nude makeup look, hooded eyes makeup look, foundation, concealer, liquid concealer, self setting concealer, hydrating concealer, glowy makeup, sheen coverage makeup look, matt makeup look, matt lipstick" />
+
         {/* Google Tag Manager Script */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-587P6VWZPW"
         ></script>
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Prabjeet Trehan Makeover",
+              "url": "https://www.prabjeettrehanmakeover.com/",
+              "logo": "https://res.cloudinary.com/df2jdmyci/image/upload/v1709588400/public/logo_m7dq5k.png",
+              "sameAs": [
+                "https://www.instagram.com/prabjeettrehanmakeover",
+                "https://www.youtube.com/channel/UCD4_q_-k660JCT-31-GXlEQ",
+                "https://www.facebook.com/Prabjeettrehanmakeover/"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-516-412-5545",
+                "contactType": "customer service",
+                "areaServed": "US",
+                "availableLanguage": "English"
+              }
+            })
+          }}
+        />
       </Head>
       <body className={dmSans.className}>{children}</body>
     </html>

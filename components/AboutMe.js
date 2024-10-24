@@ -83,7 +83,7 @@ const AboutMe = () => {
                             className="rounded-lg shadow-lg mb-4 -mt-10"
                         />
                         <p className="text-gray-700 text-center">
-                            From subtle enhancements to bold statements, each application is infused with precision and passion. Together, let's unlock your inner allure and unleash a newfound sense of confidence that radiates from within.
+                            From subtle enhancements to bold statements, each application is infused with precision and passion. Together, let&apos;s unlock your inner allure and unleash a newfound sense of confidence that radiates from within.
                         </p>
                     </motion.div>
                 </div>

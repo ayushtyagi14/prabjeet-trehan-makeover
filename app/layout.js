@@ -52,7 +52,8 @@ export default function RootLayout({ children }) {
               "sameAs": [
                 "https://www.instagram.com/prabjeettrehanmakeover",
                 "https://www.youtube.com/channel/UCD4_q_-k660JCT-31-GXlEQ",
-                "https://www.facebook.com/Prabjeettrehanmakeover/"
+                "https://www.facebook.com/Prabjeettrehanmakeover/",
+                "https://www.amazon.com/shop/prabjeettrehanmakeover?ref_=cm_sw_r_cp_ud_aipsfshop_MTJ9W1AA5NMPHR6AEBJA"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",

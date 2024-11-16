@@ -30,6 +30,9 @@ const Navbar = () => {
             <a href="https://www.facebook.com/Prabjeettrehanmakeover/" target="_blank" rel="noopener noreferrer">
                 <Image src="/facebook.png" alt="facebook" width={28} height={28} />
             </a>
+            <a href="https://www.amazon.com/shop/prabjeettrehanmakeover?ref_=cm_sw_r_cp_ud_aipsfshop_MTJ9W1AA5NMPHR6AEBJA" target="_blank" rel="noopener noreferrer">
+                <Image src="/amazon.png" alt="amazon" width={28} height={28} />
+            </a>
         </div>
     ), []);
 
@@ -152,8 +155,8 @@ const Navbar = () => {
                             ))}
                         </div>
                         <div className="flex items-center gap-3">
-                            {["instagram", "youtube", "facebook"].map((social, index) => (
-                                <a key={index} href={`https://www.${social}.com/prabjeettrehanmakeover`} target="_blank" rel="noopener noreferrer" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
+                            {["instagram", "youtube", "facebook", "amazon"].map((social, index) => (
+                                <a key={index} href={`${social === 'amazon' ? 'https://www.amazon.com/shop/prabjeettrehanmakeover?ref_=cm_sw_r_cp_ud_aipsfshop_MTJ9W1AA5NMPHR6AEBJA' : `https://www.${social}.com/prabjeettrehanmakeover`}`} target="_blank" rel="noopener noreferrer" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
                                     <Image src={`/${social}.png`} alt={social} width={28} height={28} />
                                 </a>
                             ))}

@@ -23,6 +23,9 @@ const Footer = () => {
                     <a href="https://www.facebook.com/Prabjeettrehanmakeover/" target="_blank" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
                         <img src="/facebook-black.png" alt="facebook" width={28} />
                     </a>
+                    <a href="https://www.amazon.com/shop/prabjeettrehanmakeover?ref_=cm_sw_r_cp_ud_aipsfshop_MTJ9W1AA5NMPHR6AEBJA" target="_blank" className="p-4 rounded-[32px] shadow-md border-[1.6px] border-[#2b4dac]">
+                        <img src="/amazon-black.png" alt="facebook" width={28} />
+                    </a>
                 </div>
             </div>
             <p className="text-center mt-10">&copy; 2024 Prabjeet Trehan Makeover</p>

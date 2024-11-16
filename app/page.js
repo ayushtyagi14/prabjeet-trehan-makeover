@@ -2,6 +2,7 @@
 
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
+import Exclusive from "@/components/Exclusive";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutMe />
       <Services />
       <Review />
+      <Exclusive />
       <Contact />
       <Footer />
     </div>

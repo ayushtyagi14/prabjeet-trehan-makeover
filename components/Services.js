@@ -29,7 +29,7 @@ const Services = () => {
             title: "Evening Glam",
             description: "Get ready to dazzle with our evening glam makeup service, perfect for special occasions and events.",
             consultationFee: "$100",
-            mainImage: "/assets/evening1.jpg",
+            mainImage: "/assets/evening0.jpg",
             galleryImages: [
                 { type: "image", url: "/assets/evening1.jpg" },
                 { type: "image", url: "/assets/evening2.jpg" },
@@ -38,6 +38,7 @@ const Services = () => {
                 { type: "image", url: "/assets/evening5.jpg" },
                 { type: "image", url: "/assets/evening6.jpg" },
                 { type: "image", url: "/assets/evening7.jpg" },
+                { type: "image", url: "/assets/evening8.jpg" },
             ]
         },
         {
@@ -135,7 +136,7 @@ const Services = () => {
                                     className={`
                                         w-[400px] max-h-[300px] object-cover rounded-[24px]
                                         ${index === 0 && 'object-bottom'}
-                                        ${index === 1 && 'object-top'}
+                                        ${index === 1 && 'object-center'}
                                         ${index === 2 && 'object-center'}
                                     `}
                                 />

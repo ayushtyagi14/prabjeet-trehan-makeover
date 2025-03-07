@@ -80,6 +80,8 @@ const Review = () => {
                     </motion.div>
                 ))}
             </div>
+
+            <div id="amazon" className="mb-9"></div>
         </motion.section>
     );
 };

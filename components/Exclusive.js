@@ -10,7 +10,7 @@ const Exclusive = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="max-w-screen-2xl mx-auto py-12 px-4"
-            id="amazon"
+            // id="amazon"
         >
             <h1 className={`${stone.className} text-[60px] md:text-[90px] text-gray-800 text-center`}>
                 Click To See Exclusive Products
